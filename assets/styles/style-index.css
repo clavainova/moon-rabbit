@@ -1,0 +1,118 @@
+
+section {
+    max-width: 800px;
+    height: 100%;
+    min-height: 800px;
+    width: 50%;
+    min-width: 800px;
+    display: float center;
+    padding: 2.5%;
+    /* borders */
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
+}
+
+.icon {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100px;
+    border: 3px solid white;
+    animation-delay: -0.5;
+    animation-duration: .3s;
+}
+
+
+@keyframes keyframes1 {
+    0% {
+        transform: rotate(-1deg);
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: rotate(1.5deg);
+        animation-timing-function: ease-out;
+    }
+}
+
+.icon:hover {
+    animation-name: keyframes1;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 10%;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.smallIcon {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.meirl{
+    max-height: 200px;
+    border-radius: 500px;
+}
+
+/*  flippy coin owo image styles  */
+
+
+.boxwrapper {
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    perspective: 800px;
+    width:860px;
+    height:840px;
+    margin:auto;
+
+}
+
+.overlay:hover .boxwrapper {
+    transform: rotateY(180deg);
+}
+
+.boxback {
+    transform: rotateY(180deg);
+}
+
+.boxfront {
+    z-index: 2;
+    object-fit: cover;
+    transform: rotateY(0deg);
+}
+
+.boxfront,
+.boxback {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+    position: absolute;
+    width:800px;
+    height:800px;
+    text-align: inherit;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 100px #FFFB8C;
+}
+
+/* the moon */
+
+.boxfront{
+    background-image: url("../img/bunny.png");
+    background-size: 1000px auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color:  #FFFB8C;
+}
+
+.boxback{
+    border-left: 20px solid #FFFB8C;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 1) 100%);
+}
+

@@ -1,0 +1,101 @@
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+p,
+h1,
+span,
+footer,
+li {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    color: white;
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    background: black;
+    bottom: -5px;
+    right: 0;
+    padding: 15px;
+    padding-left: 30px;
+    border-top-left-radius: 15px;
+}
+
+footer p {
+    white-space: pre;
+    font-family: monospace;
+    text-align: left;
+}
+
+/* background */
+
+.overlay {
+    min-height: 100vh;
+    min-width: 100vw;
+    top: 0;
+    left: 0;
+    background: repeating-linear-gradient(to right, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 212, 0.5) 33%, rgba(0, 0, 255, 0.5) 66%, rgba(255, 0, 0, 0.5) 100%);
+    background-size: 200% auto;
+    background-position: 0 100%;
+    animation: gradient 15s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    padding-top: 15px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+body {
+    overflow: hidden;
+    background: url("../img/tile.png");
+    background-repeat: repeat;
+    text-align: center;
+}
+
+/* navbar */
+
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 2.5%;
+    text-align: right;
+}
+
+li {
+    padding: 15px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    min-width: 150px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    background-color: black;
+    list-style-type: none;
+}
+
+li:hover {
+    box-shadow: 0 0 100px #FFFB8C;
+    color: #FFFB8C;
+}

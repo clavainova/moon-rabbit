@@ -29,7 +29,7 @@ function buildNav(title) {
         if (item !== title) { //don't make nav button for current page
             let li = document.createElement("li"), a = document.createElement("a"), text = document.createTextNode(item);
             a.appendChild(text);
-            a.setAttribute('href', "/" + item + ".html");
+            a.setAttribute('href', item + ".html");
             li.appendChild(a);
             ul.appendChild(li);
         }

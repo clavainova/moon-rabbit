@@ -1,0 +1,8 @@
+.galleryFlexGrid{
+    margin-top: 1vh;
+    flex:left;
+}
+
+.galleryItem{
+    max-height:200px;
+}

@@ -1,3 +1,5 @@
+"use strict";
+
 function ghosts() {
     console.log("                 .-.");
     console.log("    heehee      /aa \\_");
@@ -15,36 +17,26 @@ function ghosts() {
 }
 
 function init() {
-    buildOverlay();
-    buildNav(document.title);
+    buildNav();
     buildFooter();
-    buildHeader(document.title);
+    buildHeader();
 }
 
-function buildNav(title) {
-    let nav = document.createElement("nav");
-    let ul = document.createElement("ul");
-    let pages = ["index", "photos", "web", "writing", "worms"];
-    pages.forEach((item) => {
-        if (item !== title) { //don't make nav button for current page
-            let li = document.createElement("li"), a = document.createElement("a"), text = document.createTextNode(item);
-            a.appendChild(text);
-            a.setAttribute('href', item + ".html");
-            li.appendChild(a);
-            ul.appendChild(li);
-        }
-    });
+function buildNav() {
+    let nav = document.createElement("nav"),
+        ul = document.createElement("ul"),
+        articles = document.getElementsByTagName("article");
+
+    for (let i = 0; i < articles.length; i++) { //can't use forEach on HTML collection
+        let li = document.createElement("li"), a = document.createElement("a"), text = document.createTextNode(articles[i].id);
+        a.appendChild(text);
+        a.setAttribute('href', '#' + articles[i].id);
+        li.appendChild(a);
+        ul.appendChild(li);
+    }
+
     nav.appendChild(ul);
     document.body.appendChild(nav);
-}
-
-function buildOverlay() {
-    let div = document.createElement("div");
-    div.setAttribute('class', "overlay");
-    div.setAttribute('id', "animated-overlay");
-    div.innerHTML = document.getElementById("content").innerHTML;
-    document.getElementById("content").innerHTML = "";
-    document.getElementById("content").appendChild(div);
 }
 
 function buildFooter() {
@@ -56,11 +48,16 @@ function buildFooter() {
     document.body.appendChild(footer);
 }
 
-function buildHeader(title) {
+function buildHeader() {
     let links = [{
         type: "text/css",
         rel: "stylesheet",
-        href: "assets/styles/style-" + title + ".css"
+        href: "assets/styles/style-index.css"
+    },
+    {
+        type: "text/css",
+        rel: "stylesheet",
+        href: "assets/styles/style-gallery.css"
     },
     {
         type: "text/css",
@@ -78,10 +75,14 @@ function buildHeader(title) {
     {
         rel: "preconnect",
         href: "https://fonts.gstatic.com"
-    }]
-    // style
+    },
+    {
+        rel: "icon",
+        href: "assets/img/bunny.png"
+    }
+    ]
 
-    links.forEach((item)=>{
+    links.forEach((item) => {
         let link = document.createElement("link");
         link.type = item.type; //ok to set to undefined
         link.rel = item.rel;

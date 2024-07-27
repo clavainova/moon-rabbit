@@ -3,11 +3,16 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: inherit;
     color: inherit;
+}
+
+li{
+    list-style-type: none;
 }
 
 p,
@@ -21,6 +26,15 @@ li {
     margin-top: 2.5px;
     margin-bottom: 2.5px;
     color: white;
+}
+
+article{
+    max-width:100vw;
+    padding-top: 30px;
+    min-height:100vh;
+    max-height:100vh;
+    margin-left:170px;
+    position: relative;
 }
 
 /* footer */
@@ -55,6 +69,7 @@ footer p {
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     padding-top: 15px;
+    position: fixed;
 }
 
 @keyframes gradient {
@@ -68,23 +83,23 @@ footer p {
 }
 
 body {
-    overflow: hidden;
     background: url("../img/tile.png");
     background-repeat: repeat;
     text-align: center;
+    overflow:hidden;
 }
 
 /* navbar */
 
 nav {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     margin-top: 2.5%;
     text-align: right;
 }
 
-li {
+nav ul li {
     padding: 15px;
     padding-right: 50px;
     margin-bottom: 10px;
@@ -92,10 +107,9 @@ li {
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
     background-color: black;
-    list-style-type: none;
 }
 
-li:hover {
+nav ul li:hover {
     box-shadow: 0 0 100px #FFFB8C;
     color: #FFFB8C;
 }

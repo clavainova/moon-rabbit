@@ -37,6 +37,11 @@ article{
     position: relative;
 }
 
+.highlight{
+    background: black;
+    padding:2px;
+}
+
 /* footer */
 
 footer {

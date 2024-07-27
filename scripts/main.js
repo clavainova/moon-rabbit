@@ -20,12 +20,24 @@ function init() {
     buildNav();
     buildFooter();
     buildHeader();
+    buildGallery();
     addEvents();
 }
 
 function addEvents() {
     document.getElementById("index").addEventListener("click", function (e) {
         this.classList.toggle("is-active");
+    });
+}
+
+async function buildGallery() {
+    let response = await fetch("data/galleryItems.json");
+    let gallery = await response.json();
+    gallery.forEach((item) => {
+        let img = document.createElement("img");
+        img.src = item.src;
+        img.classList.add("galleryItem");
+        document.getElementById("galleryFlexGrid").appendChild(img);
     });
 }
 
@@ -42,7 +54,7 @@ function buildNav() {
         li.setAttribute("id", "nav_" + articles[i].id);
         li.classList.add("nav_default");
         li.addEventListener("click", (e) => {
-            toggleNavButtons("nav_"+articles[i].id);
+            toggleNavButtons("nav_" + articles[i].id);
         });
         ul.appendChild(li);
     }
@@ -68,17 +80,18 @@ function buildFooter() {
         p = document.createElement("p"),
         text = document.createTextNode("|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(•ㅅ•) || \n/ 　 づ");
     p.appendChild(text);
-    p.addEventListener("mouseover",(e)=>{
-        p.innerHTML="|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(OㅅO) || \n/ 　 づ";
+    p.addEventListener("mouseover", (e) => {
+        p.innerHTML = "|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(OㅅO) || \n/ 　 づ";
     });
-    p.addEventListener("mouseout",(e)=>{
-        p.innerHTML="|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(nㅅn) || \n/ 　 づ";
+    p.addEventListener("mouseout", (e) => {
+        p.innerHTML = "|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(nㅅn) || \n/ 　 づ";
     });
     footer.appendChild(p);
     document.body.appendChild(footer);
 }
 
 function buildHeader() {
+    //better performance if this is kept here
     let links = [{
         type: "text/css",
         rel: "stylesheet",

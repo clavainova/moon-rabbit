@@ -1,11 +1,12 @@
 .gallery{
-    padding:1%;
+    padding:2.5%;
 }
 
 .galleryFlexGrid{
     margin-top: 1%;
     flex:center;
     min-height: 800px;
+    max-height: 70vh;
     overflow-y: scroll;
 }
 
@@ -25,9 +26,4 @@
 .galleryItem, .galleryIntro, .galleryFlexGrid{
     border-radius:5px;
     background: rgba(0, 0, 0, 0.8);
-}
-
-.galleryIntro{
-    padding-top: 15px;
-    padding-bottom:15px;
 }

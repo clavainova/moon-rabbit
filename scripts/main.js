@@ -33,13 +33,34 @@ function addEvents() {
 async function buildGallery() {
     let response = await fetch("data/galleryItems.json");
     let gallery = await response.json();
-    gallery.forEach((item) => {
+    gallery.forEach((item, index) => {
         let img = document.createElement("img");
         img.src = item.src;
+        img.setAttribute("id", "gal_" + index);
+        img.addEventListener("click", (e) => {
+            openImgModal(item.src, item.desc);
+        });
         img.setAttribute('placeholder', item.placeholder);
         img.classList.add("galleryItem");
         document.getElementById("galleryFlexGrid").appendChild(img);
     });
+}
+
+function openImgModal(url, desc){
+    //open modal to show fullsize image
+    let div=document.createElement("div");
+    div.classList.add("imgModal");
+    let img = document.createElement("img");
+    img.src=url;
+    div.appendChild(img)
+    let p = document.createElement("p");
+    let text = document.createTextNode(desc);
+    p.appendChild(text);
+    div.appendChild(p);
+    div.addEventListener("click",(e)=>{
+        div.remove(); //close when clicked
+    });
+    document.body.appendChild(div);
 }
 
 function buildNav() {

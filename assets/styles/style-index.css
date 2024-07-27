@@ -9,26 +9,6 @@
     animation-duration: .3s;
 }
 
-
-@keyframes keyframes1 {
-    0% {
-        transform: rotate(-1deg);
-        animation-timing-function: ease-in;
-    }
-
-    50% {
-        transform: rotate(1.5deg);
-        animation-timing-function: ease-out;
-    }
-}
-
-.icon.is-active {
-    animation-name: keyframes1;
-    animation-iteration-count: infinite;
-    transform-origin: 50% 10%;
-    -webkit-transition: all .2s ease-in-out;
-}
-
 .smallIcon {
     height: 40px;
     width: 40px;
@@ -124,6 +104,11 @@
     background-color:black;    
     padding-left:5px;
     font-size:1.5em;
+}
+
+.cursorText:hover{
+    background-color:white;
+    color:black;
 }
 
 .cursorText::after {

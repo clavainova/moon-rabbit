@@ -36,6 +36,7 @@ async function buildGallery() {
     gallery.forEach((item) => {
         let img = document.createElement("img");
         img.src = item.src;
+        img.setAttribute('placeholder', item.placeholder);
         img.classList.add("galleryItem");
         document.getElementById("galleryFlexGrid").appendChild(img);
     });

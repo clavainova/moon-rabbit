@@ -1,2 +1,14 @@
-[{"src":"../assets/img/slowbro.png","desc":"it's a card owo","title":"slowbrooooo","placeholder":"the pokemon slowbro hanging out with flowers"},
-{"src":"../assets/img/slowbro.png","desc":"it's a card owo","title":"slowbrooooo","placeholder":"the pokemon slowbro hanging out with flowers"}]
+[
+    {
+        "src": "https://64.media.tumblr.com/ed53618686c584668bf5ccb387aaf910/659e05f0f0e55a57-e4/s1280x1920/71da3e195f6e412159878e298f72da6d7bfbfdb0.webp",
+        "desc": "whiffle whiffle...",
+        "title": "bluebunny",
+        "placeholder": "clay rabbit painted to look like a porcelein rabbit"
+    },
+    {
+        "src":"https://64.media.tumblr.com/2bf8eb40414aec06cdff791b024aac67/174c5fabc72122e4-b7/s1280x1920/da3414fd0293231d313be0d0abcd6724000198d1.jpg"
+    },
+    {
+        "src":"https://64.media.tumblr.com/29c45fabe89ac4fb71dfaa98dc357226/a3c344ea3a9afbff-28/s1280x1920/b9a24f623f9f918bc01da66809f9d209e21a07ef.jpg"
+    }
+]

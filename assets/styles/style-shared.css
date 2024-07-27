@@ -33,7 +33,7 @@ article{
     padding-top: 30px;
     min-height:100vh;
     max-height:100vh;
-    margin-left:170px;
+    margin-left:220px;
     position: relative;
 }
 
@@ -112,4 +112,8 @@ nav ul li {
 nav ul li:hover {
     box-shadow: 0 0 100px #FFFB8C;
     color: #FFFB8C;
+}
+
+.nav_default.is-active{
+    border-right: 5px solid #FFFB8C;
 }

@@ -20,6 +20,13 @@ function init() {
     buildNav();
     buildFooter();
     buildHeader();
+    addEvents();
+}
+
+function addEvents() {
+    document.getElementById("index").addEventListener("click", function (e) {
+        this.classList.toggle("is-active");
+    });
 }
 
 function buildNav() {
@@ -32,11 +39,28 @@ function buildNav() {
         a.appendChild(text);
         a.setAttribute('href', '#' + articles[i].id);
         li.appendChild(a);
+        li.setAttribute("id", "nav_" + articles[i].id);
+        li.classList.add("nav_default");
+        li.addEventListener("click", (e) => {
+            toggleNavButtons("nav_"+articles[i].id);
+        });
         ul.appendChild(li);
     }
 
     nav.appendChild(ul);
     document.body.appendChild(nav);
+
+    document.getElementById("nav_index").classList.toggle("is-active"); //set default to active
+}
+
+function toggleNavButtons(id) {
+    document.getElementById(id).classList.toggle("is-active");
+    let navButtons = document.getElementsByClassName("nav_default is-active");
+    for (let i = 0; i < navButtons.length; i++) { //can't use forEach on HTML collection
+        if (navButtons[i].id != id) {
+            navButtons[i].classList.remove("is-active");
+        }
+    }
 }
 
 function buildFooter() {
@@ -44,6 +68,12 @@ function buildFooter() {
         p = document.createElement("p"),
         text = document.createTextNode("|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(•ㅅ•) || \n/ 　 づ");
     p.appendChild(text);
+    p.addEventListener("mouseover",(e)=>{
+        p.innerHTML="|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(OㅅO) || \n/ 　 づ";
+    });
+    p.addEventListener("mouseout",(e)=>{
+        p.innerHTML="|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(nㅅn) || \n/ 　 づ";
+    });
     footer.appendChild(p);
     document.body.appendChild(footer);
 }

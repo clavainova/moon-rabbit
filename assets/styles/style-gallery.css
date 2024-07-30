@@ -32,6 +32,7 @@
 
 .galleryItem:hover{
     border:1px solid white;
+    cursor: pointer;
     padding:0px;
 }
 

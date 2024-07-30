@@ -21,6 +21,7 @@ function init() {
     buildFooter();
     buildHeader();
     buildGallery();
+    buildWriting();
     addEvents();
 }
 
@@ -28,7 +29,65 @@ function addEvents() {
     document.getElementById("index").addEventListener("click", function (e) {
         this.classList.toggle("is-active");
     });
+
+
 }
+
+//writing
+
+async function buildWriting() {
+    let response = await fetch("data/writing.json"),
+        writing = await response.json();
+    let types = [];
+    writing.forEach((item) => {
+        //make headers
+        if (!types.includes(item.type)) {
+            types.push(item.type);
+            let p = document.createElement("p");
+            p.setAttribute("class","active");
+            p.appendChild(document.createTextNode(item.type + " ▼"));
+            p.addEventListener("click", function () {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                panel.style.maxHeight ? panel.style.maxHeight = null : panel.style.maxHeight = panel.scrollHeight + "px";
+            });
+            document.getElementById("writingList").appendChild(p);
+            let div = document.createElement("div");
+            div.setAttribute("id", "wl-div-" + item.type);
+            document.getElementById("writingList").appendChild(div);
+        }
+        //make children of headers
+        let li = document.createElement("li");
+        let text = document.createTextNode(item.h1);
+        li.appendChild(text);
+        li.addEventListener("click", (e) => {
+            loadText(item);
+        });
+        document.getElementById("wl-div-" + item.type).appendChild(li);
+
+    });
+}
+
+function loadText(pText) {
+    document.getElementById("textPane").innerHTML = "";
+
+    let span = document.createElement("span"),
+        h1 = document.createElement("h1"),
+        p = document.createElement("p"), vText;
+
+    vText = document.createTextNode(pText.h1);
+    h1.appendChild(vText);
+    document.getElementById("textPane").appendChild(h1);
+
+    vText = document.createTextNode(pText.span)
+    span.appendChild(vText);
+    document.getElementById("textPane").appendChild(span);
+
+    p.innerHTML = pText.p; //no text node because may contain html
+    document.getElementById("textPane").appendChild(p);
+}
+
+//gallery
 
 async function buildGallery() {
     let response = await fetch("data/galleryItems.json");
@@ -46,22 +105,24 @@ async function buildGallery() {
     });
 }
 
-function openImgModal(url, desc){
+function openImgModal(url, desc) {
     //open modal to show fullsize image
-    let div=document.createElement("div");
+    let div = document.createElement("div");
     div.classList.add("imgModal");
     let img = document.createElement("img");
-    img.src=url;
+    img.src = url;
     div.appendChild(img)
     let p = document.createElement("p");
     let text = document.createTextNode(desc);
     p.appendChild(text);
     div.appendChild(p);
-    div.addEventListener("click",(e)=>{
+    div.addEventListener("click", (e) => {
         div.remove(); //close when clicked
     });
     document.body.appendChild(div);
 }
+
+// index
 
 function buildNav() {
     let nav = document.createElement("nav"),
@@ -88,6 +149,7 @@ function buildNav() {
 }
 
 function toggleNavButtons(id) {
+    //if(document.URL.includes(id.slice(4))){ - fix display bug
     document.getElementById(id).classList.toggle("is-active");
     let navButtons = document.getElementsByClassName("nav_default is-active");
     for (let i = 0; i < navButtons.length; i++) { //can't use forEach on HTML collection
@@ -118,6 +180,11 @@ function buildHeader() {
         type: "text/css",
         rel: "stylesheet",
         href: "assets/styles/style-index.css"
+    },
+    {
+        type: "text/css",
+        rel: "stylesheet",
+        href: "assets/styles/style-writing.css"
     },
     {
         type: "text/css",

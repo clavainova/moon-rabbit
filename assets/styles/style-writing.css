@@ -1,0 +1,96 @@
+.writing,
+.writing ul,
+.writing section,
+.writing ul li {
+    border-radius: 5px;
+}
+
+.writing {
+    position: relative;
+    min-width: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px;
+    margin-top: 0px;
+    max-height: 95vh;
+    min-height: 95vh;
+    text-align: left;
+    display: flex;
+}
+
+.writing ul {
+    position: relative;
+    min-width: 20%;
+    max-width: 20%;
+    min-height: 100%;
+    max-height: 100%;
+    margin: 1.5%;
+}
+
+.writing section {
+    position: relative;
+    max-height: 100%;
+    max-width: 67.5%;
+    min-width: 67.5%;
+    min-height: 100%;
+    background-color: black;
+    margin: 1.5%;
+    border: 2.5px solid rgb(255, 0, 221);
+    padding: 1.5%;
+    scrollbar-color: black rgb(255, 0, 221);
+}
+
+.writing section h1 {
+    border-bottom: 2.5px solid rgb(255, 0, 221);
+    margin-bottom: 2.5px;
+    line-height:2em;
+}
+
+.writing section p{
+    max-height: 90%;
+    min-height: 90%;
+    overflow-y: scroll;
+}
+
+.writing section span{
+    font-style: italic;
+    line-height:2em;
+}
+
+.writing ul li {
+    padding: 2.5px;
+    background-color: black;
+}
+
+.writing ul div{
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+}
+
+.writing ul p{
+    background-color: rgb(255, 0, 221);
+    text-transform: uppercase;
+    padding-left:5px;
+    border-left: white 5px solid;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.writing ul li:hover,.writing ul li:nth-child(even):hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.writing ul li:hover {
+    background-color: rgb(255, 0, 221);
+
+}
+
+.writing ul li:nth-child(even):hover {
+    background-color: rgb(204, 0, 255);
+}
+
+.writing ul li:nth-child(even) {
+    background-color: rgb(41, 41, 41);
+}

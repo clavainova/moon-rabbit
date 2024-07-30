@@ -170,6 +170,10 @@ function buildFooter() {
     p.addEventListener("mouseout", (e) => {
         p.innerHTML = "|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(nㅅn) || \n/ 　 づ";
     });
+    footer.setAttribute("id","footer");
+    footer.addEventListener("click", (e) => {
+        document.getElementById("footer").style.display = "none";
+    });
     footer.appendChild(p);
     document.body.appendChild(footer);
 }

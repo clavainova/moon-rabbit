@@ -1,3 +1,7 @@
+.icon-link{
+    position:relative;
+}
+
 .icon {
     margin-top: 2.5px;
     margin-bottom: 2.5px;
@@ -5,8 +9,26 @@
     background-color: white;
     border-radius: 100px;
     border: 3px solid white;
-    animation-delay: -0.5;
-    animation-duration: .3s;
+    display:inline-block;
+}
+
+.icon:hover{
+    border: 3px solid #FFFB8C;;
+}
+
+.icon:hover+.icon-label {
+    max-width:100px;
+}
+
+.icon-label{
+    margin-top:100%;
+    position:absolute;
+    display:inline-block;
+    max-width:0px;
+    overflow:hidden;
+    transition:all 0.5s ease-in;
+    z-index:99;
+    background:black;
 }
 
 .smallIcon {
@@ -124,5 +146,29 @@
 @keyframes cursor-blink {
     0% {
       opacity: 0;
+    }
+  }
+
+/* wormy */
+
+.wormy{
+    animation-name: wormy;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  @keyframes wormy {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -7px;
+    }
+    100% {
+      top: 0px;
     }
   }

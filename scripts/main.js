@@ -183,47 +183,65 @@ function buildHeader() {
     let links = [{
         type: "text/css",
         rel: "stylesheet",
-        href: "assets/styles/style-index.css"
+        href: "assets/styles/style-index.css",
+        layoutFor: "desktop"
     },
     {
         type: "text/css",
         rel: "stylesheet",
-        href: "assets/styles/style-writing.css"
+        href: "assets/styles/style-writing.css",
+        layoutFor: "desktop"
     },
     {
         type: "text/css",
         rel: "stylesheet",
-        href: "assets/styles/style-gallery.css"
+        href: "assets/styles/style-gallery.css",
+        layoutFor: "desktop"
     },
     {
         type: "text/css",
         rel: "stylesheet",
-        href: "assets/styles/style-shared.css"
+        href: "assets/styles/style-shared.css",
+        layoutFor: "desktop"
+    },
+    {
+        type: "text/css",
+        rel: "stylesheet",
+        href: "assets/styles/style-mobile.css",
+        layoutFor: "mobile"
     },
     {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        href: "https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+        layoutFor: "all"
     },
     {
         rel: "preconnect",
-        href: "https://fonts.googleapis.com"
+        href: "https://fonts.googleapis.com",
+        layoutFor: "all"
     },
     {
         rel: "preconnect",
-        href: "https://fonts.gstatic.com"
+        href: "https://fonts.gstatic.com",
+        layoutFor: "all"
     },
     {
         rel: "icon",
-        href: "assets/img/bunny.png"
+        href: "assets/img/bunny.png",
+        layoutFor: "all"
     }
-    ]
+    ], 
+    layout = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? "mobile" : "desktop");
 
     links.forEach((item) => {
-        let link = document.createElement("link");
-        link.type = item.type; //ok to set to undefined
-        link.rel = item.rel;
-        link.href = item.href;
-        document.head.appendChild(link);
+        if (item.layoutFor == "all" || item.layoutFor == layout){
+            console.log("adding... " + item.href);
+            let link = document.createElement("link");
+            link.type = item.type; //ok to set to undefined
+            link.rel = item.rel;
+            link.href = item.href;
+            document.head.appendChild(link);
+        }
     });
 }
 

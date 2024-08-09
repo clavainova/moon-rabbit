@@ -19,7 +19,7 @@ p,
 h1,
 span,
 footer,
-li {
+li, button, input, td, tr, table {
     font-family: "Courier Prime", monospace;
     font-weight: 400;
     font-style: normal;

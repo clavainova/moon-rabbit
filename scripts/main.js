@@ -22,15 +22,18 @@ function init() {
     buildHeader();
     buildGallery();
     buildWriting();
+    buildSprites();
     addEvents();
 }
 
 function addEvents() {
+    //init nav
     document.getElementById("index").addEventListener("click", function (e) {
         this.classList.toggle("is-active");
     });
 
-
+    //search for mons
+    document.getElementById("monSearch").addEventListener("click", function (e) { searchMons() });
 }
 
 //writing
@@ -44,7 +47,7 @@ async function buildWriting() {
         if (!types.includes(item.type)) {
             types.push(item.type);
             let p = document.createElement("p");
-            p.setAttribute("class","active");
+            p.setAttribute("class", "active");
             p.appendChild(document.createTextNode(item.type + " ▼"));
             p.addEventListener("click", function () {
                 this.classList.toggle("active");
@@ -170,7 +173,7 @@ function buildFooter() {
     p.addEventListener("mouseout", (e) => {
         p.innerHTML = "|￣￣￣￣￣￣ |\n|  WEBSITE   | \n|     BY     |\n|  CLAVAIN   | \n| ＿＿＿＿＿_ | \n(\\__/\) || \n(nㅅn) || \n/ 　 づ";
     });
-    footer.setAttribute("id","footer");
+    footer.setAttribute("id", "footer");
     footer.addEventListener("click", (e) => {
         document.getElementById("footer").style.display = "none";
     });
@@ -211,6 +214,12 @@ function buildHeader() {
         layoutFor: "mobile"
     },
     {
+        type: "text/css",
+        rel: "stylesheet",
+        href: "assets/styles/style-mons.css",
+        layoutFor: "desktop"
+    },
+    {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap",
         layoutFor: "all"
@@ -230,12 +239,11 @@ function buildHeader() {
         href: "assets/img/bunny.png",
         layoutFor: "all"
     }
-    ], 
-    layout = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? "mobile" : "desktop");
+    ],
+        layout = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? "mobile" : "desktop");
 
     links.forEach((item) => {
-        if (item.layoutFor == "all" || item.layoutFor == layout){
-            console.log("adding... " + item.href);
+        if (item.layoutFor == "all" || item.layoutFor == layout) {
             let link = document.createElement("link");
             link.type = item.type; //ok to set to undefined
             link.rel = item.rel;
@@ -246,3 +254,162 @@ function buildHeader() {
 }
 
 init();
+
+//pokémon
+
+class Mon {
+    constructor(id, personalData, apiData, iconsrc) {
+        this.id = id;
+        this.personalData = personalData;
+        this.apiData = apiData;
+        this.iconsrc = iconsrc;
+    }
+
+    buildDetailsPane() {
+        //title
+        document.getElementById("monDetails").innerHTML = "";
+        let h1 = document.createElement("h1");
+        let text;
+        text = this.personalData.Species;
+        if (this.personalData.Form !== undefined) {
+            text += " (" + this.personalData.Species + ")";
+        }
+        h1.appendChild(document.createTextNode(text))
+        document.getElementById("monDetails").appendChild(h1);
+
+        //icon
+        let img = document.createElement("img");
+        img.src = this.iconsrc;
+        document.getElementById("monDetails").appendChild(img);
+
+        let table = document.createElement("table"), tr, td_title, td_value;
+
+        //what metadata counts for the table at the bottom - configurable here
+        let statsEval = [
+            { "td_title": "Nickname", "value": this.personalData.Nickname },
+            { "td_title": "Caught In", "value": this.personalData.Game },
+            { "td_title": "Types", "value": this.apiData.types, "switch": "types" },
+            { "td_title": "No.", "value": this.apiData.id },
+            { "td_title": "Gender", "value": this.personalData.Gender },
+            {"td_title":"Group","value":this.personalData.Group}
+        ]
+
+        statsEval.forEach((item) => {
+            if (item.value != undefined) {
+                tr = document.createElement("tr");
+                td_title = document.createElement("td");
+                td_title.innerHTML = item.td_title;
+                tr.appendChild(td_title);
+                td_value = document.createElement("td");
+                if (Array.isArray(item.value)) { //for ones where data is array, e.g. types
+                    let tdText = ""
+                    item.value.forEach((val) => {
+                        switch (item.switch) {
+                            case "types":
+                                if (val.type.name != undefined) {
+                                    tdText += (tdText != "") ? ("/" + capitalize(val.type.name)) : capitalize(val.type.name);
+                                }
+                                break;
+                        }
+                    });
+                    td_value.innerHTML = tdText
+                } else {
+                    td_value.innerHTML = item.value;
+                }
+                tr.appendChild(td_value);
+                table.appendChild(tr);
+            }
+            function capitalize(str) {
+                return str.charAt(0).toUpperCase() + str.slice(1);
+            }
+        });
+
+
+
+        document.getElementById("monDetails").appendChild(table);
+
+        //details table
+        //add table
+        //add data that exists to array with header value
+        //populate table with foreach
+    }
+
+    //returns bool
+    checkData(searchQuery, index = null) {
+        if (index == "type") {
+            if (checkType(searchQuery, this.apiData) == true) {
+                return true;
+            }
+        } else {
+            if (this.personalData.Species != undefined && this.personalData.Species.toLowerCase().includes(searchQuery.toLowerCase())) {
+                return true;
+            } else if (this.personalData.Nickname != undefined && this.personalData.Nickname.toLowerCase().includes(searchQuery.toLowerCase())) {
+                return true;
+            } else if (checkType(searchQuery, this.apiData) == true) {
+                return true;
+            } else if (this.personalData.Game != undefined && this.personalData.Game.toLowerCase().includes(searchQuery.toLowerCase())) {
+                return true;
+            }else if (this.personalData.Group != undefined && this.personalData.Group.toLowerCase().includes(searchQuery.toLowerCase())) {
+                return true;
+            }
+        }
+        return false;
+        function checkType(searchQuery, apiData) {
+            if (apiData != undefined) {
+                apiData.types.forEach((item) => {
+                    if (item.type.name.toLowerCase() == searchQuery.toLowerCase()) {
+                        return true;
+                    }
+                });
+        }
+    }
+}
+}
+
+var monList = [Mon]; //store api data locally
+
+async function buildSprites() {
+    let response = await fetch("data/shinymons.json");
+    let gallery = await response.json();
+    gallery.forEach((item, index) => {
+        let apiURL
+        if (item.Form !== undefined) { //get forms properly (e.g. east sea gastrodon)
+            apiURL = "https://pokeapi.co/api/v2/pokemon-form/" + item.Species.toLowerCase() + "-" + item.Form.toLowerCase();
+        } else { apiURL = "https://pokeapi.co/api/v2/pokemon/" + item.Species.toLowerCase(); }
+        fetch(apiURL
+        ).then(
+            response => {
+                response.json().then((body) => {
+                    //create DOM element and append
+                    let icon = document.createElement("img");
+                    icon.setAttribute("id", "mon_icon_" + index);
+                    if (item.Gender == "Female" && body.sprites.front_shiny_female != null) { //show female sprites where exist and applicable
+                        icon.src = body.sprites.front_shiny_female;
+                    }
+                    else {
+                        icon.src = body.sprites.front_shiny;
+                    }
+                    let mon = new Mon("mon_icon_" + index, item, body, icon.src);
+                    icon.addEventListener("click", () => { mon.buildDetailsPane() });
+                    document.getElementById("shinymonsgallery").appendChild(icon); //add to DOM
+                    monList.push(mon); //add to local storage
+                })
+            }
+        ).catch(err => (alert(err)));
+    });
+}
+
+function searchMons() {
+    let query = document.getElementById("monSearchQuery").value;
+    monList.forEach((item) => {
+        if (item.personalData != undefined) {
+
+            console.log(item.id)
+            if (item.checkData(query) == false) {
+                document.getElementById(item.id).style.display = 'none';
+            } else {
+                document.getElementById(item.id).style.display = 'block';
+            }
+        }
+    });
+}

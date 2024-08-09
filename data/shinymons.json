@@ -1,0 +1,1552 @@
+[
+    {
+        "Species": "Abra",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Alakazam",
+        "Game": "Legends Arceus",
+        "Nickname": "Merlin"
+    },
+    {
+        "Species": "Aipom",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Aipom",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Ambipom",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Flapple",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Haxorus",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Azumarill",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Bagon",
+        "Game": "Violet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Bagon",
+        "Game": "Violet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Salamence",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Barboach",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Basculegion-male",
+        "Game": "Legends Arceus",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Basculegion-female",
+        "Game": "Legends Arceus",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Bergmite",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Barbaracle",
+        "Game": "Ultra Sun",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Bonsly",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Tsareena",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Brambleghast",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Bronzong",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Brute-Bonnet",
+        "Game": "Scarlet",
+        "Group": "Paradox"
+    },
+    {
+        "Species": "Bruxish",
+        "Game": "Moon",
+        "Gender": "Female",
+        "Nickname": "Polly"
+    },
+    {
+        "Species": "Budew",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "roserade",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Buizel",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Floatzel",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Lopunny",
+        "Game": "Legends Arceus",
+        "Gender": "Female",
+        "Nickname": "Panne"
+    },
+    {
+        "Species": "Cacturne",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Scovillain",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Metapod",
+        "Game": "Moon",
+        "Gender": "Male",
+        "Nickname": "Rusty"
+    },
+    {
+        "Species": "Cetitan",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Nickname": "Neon"
+    },
+    {
+        "Species": "Chansey",
+        "Game": "Violet",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Chansey",
+        "Game": "Violet",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Armarouge",
+        "Game": "Violet",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Ceruledge",
+        "Game": "Violet",
+        "Nickname": "Durandal"
+    },
+    {
+        "Species": "Drednaw",
+        "Game": "Violet",
+        "Nickname": "Veterani"
+    },
+    {
+        "Species": "Chimecho",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Cherrim",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Clauncher",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Cleffa",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Cleffa",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Vespiquen",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Corsola",
+        "Game": "Ultra Sun",
+        "Gender": "Female",
+        "Nickname": "Radch"
+    },
+    {
+        "Species": "Toxicroak",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Toxicroak",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Toxicroak",
+        "Game": "Legends Arceus",
+        "Gender": "Female",
+        "Nickname": "Tadpole"
+    },
+    {
+        "Species": "Copperajah",
+        "Game": "Violet",
+        "Nickname": "Ganesha"
+    },
+    {
+        "Species": "Cyclizar",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Typhlosion-hisui",
+        "Game": "Legends Arceus",
+        "Group": "Starters"
+    },
+    {
+        "Species": "Typhlosion-hisui",
+        "Game": "Legends Arceus",
+        "Group": "Starters"
+    },
+    {
+        "Species": "Deerling",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Sawsbuck",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Nickname": "Decoy"
+    },
+    {
+        "Species": "Hydreigon",
+        "Game": "Scarlet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Dondozo",
+        "Game": "Violet",
+        "Nickname": "Onamazu"
+    },
+    {
+        "Species": "Dragonair",
+        "Game": "Violet",
+        "Group": "Pseudo-legends",
+        "Nickname": "Lily"
+    },
+    {
+        "Species": "Dratini",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Dragapult",
+        "Game": "Violet",
+        "Group": "Pseudo-legends",
+        "Nickname": "Usher"
+    },
+    {
+        "Species": "Dreepy",
+        "Game": "Violet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Drifblim",
+        "Game": "Legends Arceus",
+        "Nickname": "Helium"
+    },
+    {
+        "Species": "Drifloon",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Dudunsparce",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Dusclops",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Dusknoir",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Crustle",
+        "Game": "Ultra Sun",
+        "Gender": "Female",
+        "Nickname": "Melody"
+    },
+    {
+        "Species": "Eevee",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Eevee"
+    },
+    {
+        "Species": "Eevee",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Eevee"
+    },
+    {
+        "Species": "Espeon",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Eevee",
+        "Nickname": "Sianté"
+    },
+    {
+        "Species": "Flareon",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Eevee",
+        "Nickname": "Teyu"
+    },
+    {
+        "Species": "Glaceon",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Eevee",
+        "Nickname": "Yuki"
+    },
+    {
+        "Species": "Jolteon",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Eevee"
+    },
+    {
+        "Species": "Leafeon",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Group": "Eevee"
+    },
+    {
+        "Species": "Sylveon",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Group": "Eevee"
+    },
+    {
+        "Species": "Umbreon",
+        "Game": "Violet",
+        "Group": "Eevee",
+        "Nickname": "Nocturne"
+    },
+    {
+        "Species": "Vaporeon",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Eevee",
+        "Nickname": "Lotus"
+    },
+    {
+        "Species": "eiscue-ice",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Milotic",
+        "Game": "Moon",
+        "Gender": "Female",
+        "Nickname": "Lila"
+    },
+    {
+        "Species": "Ferrothorn",
+        "Game": "Sword",
+        "Gender": "Male",
+        "Nickname": "Ghetsis"
+    },
+    {
+        "Species": "Dachsbun",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Finizen",
+        "Game": "Violet",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Palafin",
+        "Game": "Violet",
+        "Nickname": "Neos"
+    },
+    {
+        "Species": "Florges",
+        "Game": "Violet",
+        "Form": "Red"
+    },
+    {
+        "Species": "Fletchling",
+        "Game": "Violet",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Talonflame",
+        "Game": "Moon",
+        "Gender": "Female",
+        "Group": "Birds",
+        "Nickname": "Fyora"
+    },
+    {
+        "Species": "Espathra",
+        "Game": "Violet",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Flutter-Mane",
+        "Game": "Scarlet",
+        "Gender": "Agender",
+        "Group": "Paradox",
+        "Nickname": "Spenky"
+    },
+    {
+        "Species": "Amoonguss",
+        "Game": "Violet",
+        "Nickname": "Bluebell"
+    },
+    {
+        "Species": "Lurantis",
+        "Game": "Ultra Sun",
+        "Gender": "Male",
+        "Nickname": "Undel"
+    },
+    {
+        "Species": "Baxcalibur",
+        "Game": "Violet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Gastly",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Gastly",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Gengar",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Haunter",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Geodude",
+        "Game": "Legends Arceus",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Golem",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Graveler",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Graveler",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Graveler",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Garchomp",
+        "Game": "X",
+        "Gender": "Female",
+        "Group": "Pseudo-legends",
+        "Nickname": "Aegis"
+    },
+    {
+        "Species": "Gible",
+        "Game": "Legends Arceus",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Gible",
+        "Game": "Scarlet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Gible",
+        "Game": "Legends Arceus",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Gible",
+        "Game": "Violet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "farigiraf",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Purugly",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Gligar",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Glimmora",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Goodra",
+        "Game": "Violet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Great-Tusk",
+        "Game": "Scarlet",
+        "Gender": "Agender",
+        "Group": "Paradox"
+    },
+    {
+        "Species": "Houndstone",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Muk",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Muk-alola",
+        "Game": "Ultra Sun",
+        "Gender": "Male",
+        "Nickname": "Brecht"
+    },
+    {
+        "Species": "Growlithe",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Arcanine-hisui",
+        "Game": "Legends Arceus",
+        "Gender": "Male",
+        "Nickname": "Solnishko"
+    },
+    {
+        "Species": "Growlithe-hisui",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Growlithe-hisui",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Hatterene",
+        "Game": "Sword"
+    },
+    {
+        "Species": "Hawlucha",
+        "Game": "Violet",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Heracross",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Hippowdon",
+        "Game": "Ultra Sun",
+        "Gender": "Female",
+        "Nickname": "Cloven"
+    },
+    {
+        "Species": "Jumpluff",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Houndoom",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Grimmsnarl",
+        "Game": "Violet",
+        "Nickname": "Schwartzwald"
+    },
+    {
+        "Species": "Iron-Bundle",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Group": "Paradox",
+        "Nickname": "Annihilation"
+    },
+    {
+        "Species": "Iron-Jugulis",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Group": "Paradox"
+    },
+    {
+        "Species": "Iron-Moth",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Group": "Paradox"
+    },
+    {
+        "Species": "Iron-Thorns",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Group": "Paradox"
+    },
+    {
+        "Species": "Iron-Treads",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Group": "Paradox"
+    },
+    {
+        "Species": "Iron-Valiant",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Group": "Paradox",
+        "Nickname": "Vess"
+    },
+    {
+        "Species": "Kommo-o",
+        "Game": "Moon",
+        "Gender": "Female",
+        "Group": "Pseudo-legends",
+        "Nickname": "Watermelon"
+    },
+    {
+        "Species": "Klawf",
+        "Game": "Violet",
+        "Nickname": "Crabingus"
+    },
+    {
+        "Species": "Klefki",
+        "Game": "Violet",
+        "Nickname": "Egress"
+    },
+    {
+        "Species": "Volcarona",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Nickname": "Nyambi"
+    },
+    {
+        "Species": "Tyranitar",
+        "Game": "Scarlet",
+        "Group": "Pseudo-legends"
+    },
+    {
+        "Species": "Latios",
+        "Game": "Ultra Sun",
+        "Gender": "Male",
+        "Group": "Legendaries",
+        "Nickname": "Anaander"
+    },
+    {
+        "Species": "Lombre",
+        "Game": "Ultra Sun",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Machamp",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Gyarados",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Magikarp",
+        "Game": "Legends Arceus",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Magikarp",
+        "Game": "Moon",
+        "Gender": "Male",
+        "Nickname": "Unlucky"
+    },
+    {
+        "Species": "Magnezone",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Nickname": "Polaris"
+    },
+    {
+        "Species": "Annihilape",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Ampharos",
+        "Game": "Ultra Sun",
+        "Gender": "Female",
+        "Nickname": "Cottoncandy"
+    },
+    {
+        "Species": "Toxapex",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Maschiff",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Maschiff",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Mimikyu-busted",
+        "Game": "Violet",
+        "Group": "Pikaclone"
+    },
+    {
+        "Species": "Misdreavus",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Misdreavus",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Mismagius",
+        "Game": "Moon",
+        "Gender": "Female",
+        "Nickname": "Nymphadora"
+    },
+    {
+        "Species": "Mismagius",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Murkrow",
+        "Game": "Legends Arceus",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Garganacl",
+        "Game": "Violet",
+        "Nickname": "Minecraft"
+    },
+    {
+        "Species": "Nihilego",
+        "Game": "Ultra Sun",
+        "Gender": "Agender",
+        "Group": "Ultra Beasts",
+        "Nickname": "Slips"
+    },
+    {
+        "Species": "Noivern",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Probopass",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Camerupt",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Lokix",
+        "Game": "Violet",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Oricorio-pau",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Orthworm",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Nickname": "Jörmungandr"
+    },
+    {
+        "Species": "Samurott-hisui",
+        "Game": "Legends Arceus",
+        "Group": "Starters",
+        "Nickname": "Lagoon"
+    },
+    {
+        "Species": "Pachirisu",
+        "Game": "Legends Arceus",
+        "Group": "Pikaclone"
+    },
+    {
+        "Species": "Parasect",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Parasect",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Pawmi",
+        "Game": "Violet",
+        "Group": "Pikaclone"
+    },
+    {
+        "Species": "Pawmot",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Group": "Pikaclone",
+        "Nickname": "Sweetheart"
+    },
+    {
+        "Species": "Pawmot",
+        "Game": "Violet",
+        "Group": "Pikaclone"
+    },
+    {
+        "Species": "Kingambit",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Nickname": "Tokugawa"
+    },
+    {
+        "Species": "lilligant-hisui",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Pichu",
+        "Game": "Legends Arceus",
+        "Group": "Pikaclone*"
+    },
+    {
+        "Species": "Toucannon",
+        "Game": "Moon",
+        "Gender": "Female",
+        "Nickname": "Ferra"
+    },
+    {
+        "Species": "Piplup",
+        "Game": "Legends Arceus",
+        "Gender": "Male",
+        "Group": "Starters",
+        "Nickname": "Meow"
+    },
+    {
+        "Species": "Ponyta",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Golduck",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Psyduck",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Psyduck",
+        "Game": "Violet"
+    },
+    {
+        "Species": "qwilfish",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Overqwil",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Gallade",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Gardevoir",
+        "Game": "Legends Arceus",
+        "Gender": "Female",
+        "Nickname": "Alice"
+    },
+    {
+        "Species": "Rellor",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Nickname": "Midas"
+    },
+    {
+        "Species": "Octillery",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Remoraid",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Rhyperior",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Lucario",
+        "Game": "Legends Arceus",
+        "Gender": "Male",
+        "Nickname": "Snicket"
+    },
+    {
+        "Species": "Roaring-Moon",
+        "Game": "Scarlet",
+        "Gender": "Agender",
+        "Group": "Paradox",
+        "Nickname": "Luna"
+    },
+    {
+        "Species": "lycanroc-midday",
+        "Game": "Moon",
+        "Gender": "Female",
+        "Nickname": "Eloise"
+    },
+    {
+        "Species": "lycanroc-midnight",
+        "Game": "Violet"
+    },
+    {
+        "Species": "lycanroc-dusk",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Rockruff",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Coalossal",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Corviknight",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Group": "Birds",
+        "Nickname": "Yulia"
+    },
+    {
+        "Species": "Rotom",
+        "Game": "Legends Arceus",
+        "Gender": "Agender",
+        "Nickname": "Roboppi"
+    },
+    {
+        "Species": "Braviary",
+        "Game": "Violet",
+        "Group": "Birds",
+        "Nickname": "Sparrowhawk"
+    },
+    {
+        "Species": "Braviary-hisui",
+        "Game": "Legends Arceus",
+        "Group": "Birds",
+        "Nickname": "Firnament"
+    },
+    {
+        "Species": "Sableye",
+        "Game": "Violet",
+        "Nickname": "Citrine"
+    },
+    {
+        "Species": "Salandit",
+        "Game": "Violet",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Salazzle",
+        "Game": "Violet",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Sandy-Shocks",
+        "Game": "Scarlet",
+        "Gender": "Agender",
+        "Group": "Paradox"
+    },
+    {
+        "Species": "Palossand",
+        "Game": "Moon",
+        "Gender": "Male",
+        "Nickname": "Mordecai"
+    },
+    {
+        "Species": "Scream-Tail",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Group": "Paradox"
+    },
+    {
+        "Species": "Scizor",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Furret",
+        "Game": "Ultra Sun",
+        "Gender": "Male",
+        "Nickname": "Rosa"
+    },
+    {
+        "Species": "Seviper",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Nickname": "Shereta"
+    },
+    {
+        "Species": "Cloyster",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Gastrodon",
+        "Game": "Legends Arceus",
+        "Form": "east"
+    },
+    {
+        "Species": "Gastrodon",
+        "Game": "Legends Arceus",
+        "Form": "west"
+    },
+    {
+        "Species": "Luxio",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Luxray",
+        "Game": "Legends Arceus",
+        "Gender": "Male",
+        "Nickname": "Solaris"
+    },
+    {
+        "Species": "Shinx",
+        "Game": "Violet",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Breloom",
+        "Game": "Violet",
+        "Gender": "Male",
+        "Nickname": "Spiral"
+    },
+    {
+        "Species": "Shuppet",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Polteageist",
+        "Game": "Violet",
+        "Gender": "Agender",
+        "Nickname": "Sugarplum"
+    },
+    {
+        "Species": "Drapion",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Drapion",
+        "Game": "Ultra Sun",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Skorupi",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Goodra-hisui",
+        "Game": "Legends Arceus",
+        "Gender": "Female",
+        "Group": "Pseudo-legends",
+        "Nickname": "Coxinella"
+    },
+    {
+        "Species": "Slither-Wing",
+        "Game": "Scarlet",
+        "Gender": "Agender",
+        "Group": "Paradox",
+        "Nickname": "Mithra"
+    },
+    {
+        "Species": "Slowbro",
+        "Game": "Moon",
+        "Gender": "Male",
+        "Nickname": "Buddy"
+    },
+    {
+        "Species": "Slowking",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Arboliva",
+        "Game": "Violet",
+        "Nickname": "Pax"
+    },
+    {
+        "Species": "Sneasel",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Sneasel",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Sneasel-hisui",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Sneasler",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Frosmoth",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Nickname": "Mint"
+    },
+    {
+        "Species": "Snorunt",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Abomasnow",
+        "Game": "Legends Arceus",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Abomasnow",
+        "Game": "Legends Arceus",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Abomasnow",
+        "Game": "Ultra Sun",
+        "Gender": "Male",
+        "Nickname": "Hedgehog"
+    },
+    {
+        "Species": "Froslass",
+        "Game": "Violet",
+        "Nickname": "Dawn"
+    },
+    {
+        "Species": "Fearow",
+        "Game": "Leaf Green",
+        "Gender": "Female",
+        "Group": "Birds",
+        "Nickname": "BIRDY"
+    },
+    {
+        "Species": "Spheal",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Walrein",
+        "Game": "Legends Arceus",
+        "Nickname": "Fuschia"
+    },
+    {
+        "Species": "Ariados",
+        "Game": "Moon",
+        "Gender": "Male",
+        "Nickname": "Blue"
+    },
+    {
+        "Species": "Stantler",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Stantler",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Wyrdeer",
+        "Game": "Legends Arceus",
+        "Nickname": "Fuji"
+    },
+    {
+        "Species": "Staraptor",
+        "Game": "Legends Arceus",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Staraptor",
+        "Game": "Legends Arceus",
+        "Gender": "Male",
+        "Group": "Birds",
+        "Nickname": "Cirrus"
+    },
+    {
+        "Species": "Staravia",
+        "Game": "Legends Arceus",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Staravia",
+        "Game": "Legends Arceus",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Staravia",
+        "Game": "Legends Arceus",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Staravia",
+        "Game": "Legends Arceus",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Starly",
+        "Game": "Legends Arceus",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Starly",
+        "Game": "Legends Arceus",
+        "Group": "Birds"
+    },
+    {
+        "Species": "Starly",
+        "Game": "Diamond",
+        "Gender": "Male",
+        "Group": "Birds",
+        "Nickname": "Arrow"
+    },
+    {
+        "Species": "Starmie",
+        "Game": "Moon",
+        "Gender": "Agender",
+        "Nickname": "Enby"
+    },
+    {
+        "Species": "Bewear",
+        "Game": "Ultra Sun",
+        "Gender": "Male",
+        "Nickname": "Honey"
+    },
+    {
+        "Species": "Altaria",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Group": "Birds",
+        "Nickname": "Ora"
+    },
+    {
+        "Species": "Piloswine",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Piloswine",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Piloswine",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Swinub",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Swinub",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Spidops",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Tarountula",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Tatsugiri",
+        "Game": "Violet",
+        "Form":"Droopy"
+    },
+    {
+        "Species": "Teddiursa",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Teddiursa",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Teddiursa",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Teddiursa",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Ursaluna",
+        "Game": "Legends Arceus",
+        "Gender": "Female",
+        "Nickname": "Clover"
+    },
+    {
+        "Species": "Ursaring",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Tentacruel",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Tentacruel",
+        "Game": "Leaf Green",
+        "Gender": "Male",
+        "Nickname": "SHINY"
+    },
+    {
+        "Species": "Toedscruel",
+        "Game": "Violet",
+        "Nickname": "Marianne"
+    },
+    {
+        "Species": "Torkoal",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Nickname": "Ough"
+    },
+    {
+        "Species": "Flygon",
+        "Game": "Moon",
+        "Gender": "Male",
+        "Nickname": "Seivarden"
+    },
+    {
+        "Species": "Grotle",
+        "Game": "Legends Arceus",
+        "Group": "Starters"
+    },
+    {
+        "Species": "Torterra",
+        "Game": "Legends Arceus",
+        "Gender": "Male",
+        "Group": "Starters"
+    },
+    {
+        "Species": "Turtwig",
+        "Game": "Legends Arceus",
+        "Group": "Starters"
+    },
+    {
+        "Species": "Eelektrik",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Eelektross",
+        "Game": "Violet",
+        "Nickname": "Ribbon"
+    },
+    {
+        "Species": "Veluza",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Venomoth",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Electrode-hisui",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Kilowattrel",
+        "Game": "Violet",
+        "Group": "Birds",
+        "Nickname": "Fleetfeather"
+    },
+    {
+        "Species": "Wugtrio",
+        "Game": "Scarlet",
+        "Nickname": "Wugalubadub"
+    },
+    {
+        "Species": "Pelipper",
+        "Game": "Violet",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Clodsire",
+        "Game": "Violet",
+        "Nickname": "Blorbo"
+    },
+    {
+        "Species": "Beautifly",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Xerneas",
+        "Game": "Ultra Sun",
+        "Gender": "Agender",
+        "Group": "Legendaries",
+        "Nickname": "Celia"
+    },
+    {
+        "Species": "Yanma",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Yanmega",
+        "Game": "Ultra Sun",
+        "Gender": "Male",
+        "Nickname": "Plumes"
+    },
+    {
+        "Species": "Zangoose",
+        "Game": "Violet",
+        "Gender": "Female",
+        "Nickname": "Alox"
+    },
+    {
+        "Species": "Zigzagoon-galar",
+        "Game": "Sword",
+        "Gender": "Female",
+        "Nickname": "Berry"
+    },
+    {
+        "Species": "Zoroark",
+        "Game": "Violet"
+    },
+    {
+        "Species": "Zorua",
+        "Game": "Violet",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Zoroark-hisui",
+        "Game": "Legends Arceus",
+        "Gender": "Male",
+        "Nickname": "Cryptid"
+    },
+    {
+        "Species": "Zorua-hisui",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Crobat",
+        "Game": "Legends Arceus",
+        "Gender": "Female",
+        "Nickname": "Mossy"
+    },
+    {
+        "Species": "Golbat",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Zubat",
+        "Game": "Legends Arceus"
+    },
+    {
+        "Species": "Skiddo",
+        "Game": "Scarlet"
+    },
+    {
+        "Species": "Cramorant",
+        "Game": "Scarlet",
+        "Gender": "Female",
+        "Group": "Birds",
+        "Nickname": "Baru"
+    },
+    {
+        "Species": "Vikavolt",
+        "Game": "Scarlet",
+        "Gender": "Female",
+        "Nickname": "Radium"
+    },
+    {
+        "Species": "Quagsire",
+        "Game": "Scarlet",
+        "Gender": "Male"
+    },
+    {
+        "Species": "Poochyena",
+        "Game": "Scarlet",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Mightyena",
+        "Game": "Scarlet",
+        "Gender": "Male",
+        "Nickname": "Ferox"
+    },
+    {
+        "Species": "Ninetales",
+        "Game": "Scarlet",
+        "Gender": "Female",
+        "Nickname": "Iris"
+    },
+    {
+        "Species": "Chandelure",
+        "Game": "Scarlet"
+    },
+    {
+        "Species": "Lapras",
+        "Game": "Scarlet",
+        "Gender": "Female",
+        "Nickname": "Lorelai"
+    },
+    {
+        "Species": "Kingdra",
+        "Game": "Scarlet"
+    },
+    {
+        "Species": "Wooper",
+        "Game": "Scarlet"
+    },
+    {
+        "Species": "Corphish",
+        "Game": "Scarlet"
+    },
+    {
+        "Species": "Ninetales-alola",
+        "Game": "Scarlet",
+        "Gender": "Female",
+        "Nickname": "Sclera"
+    },
+    {
+        "Species": "Rhyhorn",
+        "Game": "Scarlet"
+    },
+    {
+        "Species": "Carbink",
+        "Game": "Scarlet"
+    },
+    {
+        "Species": "Sawsbuck",
+        "Game": "Scarlet"
+    },
+    {
+        "Species": "Mienshao",
+        "Game": "Scarlet",
+        "Gender": "Female"
+    },
+    {
+        "Species": "Zebstrika",
+        "Game": "Scarlet",
+        "Gender": "Female"
+    }
+]

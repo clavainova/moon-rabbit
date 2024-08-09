@@ -1,0 +1,162 @@
+.shinymons {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    margin-left: 240px !important;
+    max-width: 90vw;
+    min-width: 90vw;
+    max-height: 90vh;
+    padding-top: 10vh;
+    z-index:0;
+}
+
+/* gallery */
+
+.shinymonsgallery img {
+    max-height: 100px;
+    max-width: 100px;
+    position: relative;
+    display: inline-block;
+    padding:2px;
+}
+
+.shinymonsgallery img:hover {
+    padding:0;
+    border:2px solid white;
+}
+
+.shinymonsgallery img:is-active {
+    padding:0;
+    border:2px solid magenta;
+}
+
+.shinymonsgallery{
+    max-height: 90vh;
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y:scroll;
+    scrollbar-color: black rgb(255, 0, 221);
+    margin-left: 510px;
+}
+/* details pane */
+
+.monDetails{
+    max-width:450px;
+    max-height:95vh;
+    min-width:450px;
+    min-height:95vh;
+    background-color:black;
+    border-right:10px solid white;
+    position:absolute;
+    margin-top:-15px;
+    overflow:hidden;
+    padding:15px;
+    padding-bottom:50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.monDetails img{
+    height:400px;
+    width:400px;
+    background-color:white;
+    border-radius:200px;
+}
+
+.monDetails table tr td, .monDetails h1{
+    font-size:1.5em;
+}
+
+.monDetails table tr td:nth-child(1){
+    text-align:right;
+    padding-right:5px;
+    color:rgb(255, 0, 221);
+    font-weight: bold;
+}
+
+.monDetails table tr td:nth-child(2){
+    padding-left:5px;
+    text-align:left;
+}
+
+
+/* filter items */
+
+.monFilterItems,
+.shinymons input,
+.shinymons button,
+.dropdownLabel,
+.dropdownContainer,
+.dropdownItem {
+    font-size: 1.25em;
+}
+
+.shinymons input,
+.shinymons button,
+.dropdownLabel,
+.dropdownContainer,
+.dropdownItem {
+    margin-left: 2vw;
+    min-height: 100%;
+}
+
+.monFilterItems {
+    
+    z-index:99;
+    min-height: 50px;
+    top: 0;
+    position: absolute;
+    min-width: 100%;
+    text-align: left;
+    padding: 15px;
+    background-color: black;
+    border-bottom: 10px solid white;
+}
+
+.shinymons input,
+.shinymons button,
+.dropdownLabel {
+    border-radius: 5px;
+    display: inline;
+    background-color: black;
+    border: 2px solid rgb(255, 0, 221);
+}
+
+.shinymons button,
+.dropdownLabel {
+    padding: 15px;
+}
+
+.shinymons button {
+
+    border-radius: 5px;
+}
+
+/* dropdown menus */
+
+.dropdownLabel:hover {
+    color: rgb(255, 0, 221);
+}
+
+.dropdownLabel:is-active .dropdownItem {
+    display: inline;
+}
+
+.dropdownLabel {
+    color: white;
+    display: inline;
+}
+
+.dropdownContainer {
+    display: inline;
+}
+
+.dropdownItem {
+    display: none;
+}

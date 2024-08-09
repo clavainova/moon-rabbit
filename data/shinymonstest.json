@@ -1,0 +1,23 @@
+[{
+     "Species": "Gastrodon",
+     "Game": "Legends Arceus",
+     "Form": "east"
+    },
+    {
+     "Species": "Corviknight",
+     "Game": "Violet",
+     "Gender": "Female",
+     "Group": "Birds",
+     "Nickname": "Yulia"
+    },
+    {
+        "Species": "Abomasnow",
+        "Game": "Legends Arceus",
+        "Gender": "Male"
+       },
+       {
+        "Species": "Abomasnow",
+        "Game": "Legends Arceus",
+        "Gender": "Female"
+       }
+]

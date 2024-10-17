@@ -135,12 +135,13 @@ function buildNav() {
     for (let i = 0; i < articles.length; i++) { //can't use forEach on HTML collection
         let li = document.createElement("li"), a = document.createElement("a"), text = document.createTextNode(articles[i].id);
         a.appendChild(text);
-        a.setAttribute('href', '#' + articles[i].id);
+        //        a.setAttribute('href', '#' + articles[i].id);
         li.appendChild(a);
         li.setAttribute("id", "nav_" + articles[i].id);
         li.classList.add("nav_default");
         li.addEventListener("click", (e) => {
             toggleNavButtons("nav_" + articles[i].id);
+            window.location.hash = '#' + articles[i].id;
         });
         ul.appendChild(li);
     }

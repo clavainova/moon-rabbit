@@ -112,6 +112,7 @@ nav ul li {
     border-top-right-radius: 500px;
     border-bottom-right-radius: 500px;
     background-color: black;
+    cursor: pointer;
 }
 
 nav ul li:hover {
